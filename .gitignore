@@ -1,0 +1,4 @@
+*.ipnyb
+__.cache__/
+__model__/
+*.pt
