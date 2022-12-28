@@ -7,12 +7,10 @@ python server.py
 ```
 # 주의사항
 - 로컬에서만 가능
-
-- model은 크기가 커서 따로 올리지 않음. 아래 사진과 같이 model 폴더에 따로 추가해줘야 함.
 - 가상환경 구축하여 사용할 것을 권장
-
+- model은 크기가 커서 따로 올리지 않음. 아래 사진과 같이 model 폴더에 따로 추가해줘야 함.
 ![image](https://user-images.githubusercontent.com/87990290/209721942-0b16c1aa-bdbb-4d01-a3d4-aeee6e635e16.png)
-
+- `AttributeError: 'BertEncoder' object has no attribute 'gradient_checkpointing'` 에러가 발생할 경우 modelling_bert.py에서 gradient_checkpointing 애트리뷰트에 대한 조건 삭제
 # Endpoint
 ### 감정 분석
 ```python
